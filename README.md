@@ -2,8 +2,44 @@ SpotGarbage
 ===========
 Smartphone App to Detect Garbage Using Deep Learning
 ----------------------------------------------------
+## Docker image [(https://github.com/kyamagu/caffe-docker)](https://github.com/kyamagu/caffe-docker)
+* Run docker image in Windows, and share jupyter port to HOST.
+```
+docker run -it -v D:/docker_images/steve_caffe:/home/user -p 8888:8888 kyamagu/caffe
+```
+## How to manage docker containers
 
-###Description
+To stop the running container,
+
+```
+docker ps
+```
+
+Check the container ID, and use `docker stop` command.
+
+```
+docker stop <Container-ID>
+```
+
+To restart the stopped container,
+
+```
+docker restart <Container-ID>
+```
+
+To list all the existing containers,
+
+```
+docker ps -a
+```
+
+To remove the container,
+
+```bash
+docker rm <Container-ID>
+```
+
+## Description
 * The **SpotGarbage_GarbNet** folder contains the caffe model related files for **GarbNet**.
 * The code to test GarbNet is given in files named **garbnet_demo** in HTML, standard Python and Jupyter Ipython Notebook formats.
 * The code requires the following dependencies installed:
@@ -12,11 +48,10 @@ Smartphone App to Detect Garbage Using Deep Learning
   * PIL
   * Numpy
 
-###Instructions
+## Instructions
 * Put the images on which garbage needs to be detected in the **input** folder.
 * Run the **garbnet_demo.py** or run the code snippets through the Ipython notebook.
 * The predictions will be made and the images with garbage regions segmented will be saved in the **output** folder.
 
-###SpotGarbage Apk
-The SpotGarbage apk can be installed on any smartphone having Android OS 4.0.3 or above. It has been successfully tested on Nexus 5, Nexus 6, Moto G3, Moto X and Lenovo K3 Note with Android OS 6.0 (Marshmallow).
+
 
