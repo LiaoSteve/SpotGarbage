@@ -7,6 +7,10 @@ Smartphone App to Detect Garbage Using Deep Learning
 ```
 docker run -it -v D:/docker_images/steve_caffe:/home/user -p 8888:8888 kyamagu/caffe
 ```
+* Open terminal:
+```
+pip install opencv-python==3.1.0.0
+```
 ## How to manage docker containers
 
 To stop the running container,
