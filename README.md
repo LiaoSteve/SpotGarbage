@@ -1,6 +1,4 @@
-SpotGarbage
-===========
-Smartphone App to Detect Garbage Using Deep Learning
+SpotGarbage :Smartphone App to Detect Garbage Using Deep Learning
 ----------------------------------------------------
 ## Docker image [(https://github.com/kyamagu/caffe-docker)](https://github.com/kyamagu/caffe-docker)
 * Run docker image in Windows, and share jupyter port to HOST.
@@ -43,6 +41,11 @@ To remove the container,
 docker rm <Container-ID>
 ```
 
+To remove the images, 
+```
+docker images
+docker rmi <image>
+```
 ## Description
 * The **SpotGarbage_GarbNet** folder contains the caffe model related files for **GarbNet**.
 * The code to test GarbNet is given in files named **garbnet_demo** in HTML, standard Python and Jupyter Ipython Notebook formats.
