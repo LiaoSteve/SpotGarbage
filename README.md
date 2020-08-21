@@ -1,6 +1,6 @@
 SpotGarbage :Smartphone App to Detect Garbage Using Deep Learning
 ----------------------------------------------------
-## Docker image [(https://github.com/kyamagu/caffe-docker)](https://github.com/kyamagu/caffe-docker)
+### Docker image [(https://github.com/kyamagu/caffe-docker)](https://github.com/kyamagu/caffe-docker)
 * Run docker image in Windows, and share jupyter port to HOST.
 ```
 docker run -it -v D:/docker_images/steve_caffe:/home/user -p 8888:8888 kyamagu/caffe
